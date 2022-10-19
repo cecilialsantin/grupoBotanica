@@ -1,0 +1,40 @@
+body{
+    margin: 10px;
+}
+
+.navBarra{
+    width:auto;
+    margin:5px;
+    
+}
+nav{
+    justify-content: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #31525B;
+
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: #FAE6B1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:#FFA101;
+    color:#B3DEE5;
+    text-decoration: none;
+    text-transform: uppercase;
+  }

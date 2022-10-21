@@ -3,7 +3,7 @@
 let piepags = document.getElementById('piePagina');
 
 piepags.innerHTML = `
-
+gir 
 <ul>
     <li>Copyright</li>
     <li>1</li>

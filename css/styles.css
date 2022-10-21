@@ -6,6 +6,11 @@ body{
   margin: 10px;
 }
 
+.navBarra{
+    width:auto;
+    margin:5px;
+    
+}
 nav{
   justify-content: left;
 }

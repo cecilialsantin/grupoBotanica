@@ -2,6 +2,14 @@ body{
     margin: 10px;
 }
 
+.piePagina li{
+  background-color: #e2d2b5;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width:auto;
+  margin:5px;
+}
 .navBarra{
     width:auto;
     margin:5px;

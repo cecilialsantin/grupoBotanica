@@ -135,3 +135,25 @@ li a:hover {
   float:none;
   justify-content: center;
 }
+
+#sucursales img{
+  width: 100px;
+  height: 100px;
+}
+
+#sucursales iframe{
+  width: 100px;
+  height: 100px;
+}
+
+.tsucursales{
+  display:flex;
+  float:none;
+  justify-content: center;
+  padding:10px;
+  margin-top: 50px;
+}
+
+.colorf{
+  background-color: rgb(198, 234, 174, 0.5);
+}

@@ -1,5 +1,5 @@
 *{
-  font-size: 15px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 body{
@@ -15,14 +15,14 @@ nav{
   justify-content: left;
 }
 
-ul {
+.listaNav {
   box-sizing: border-box;
   height: 50%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #31525B;
+  background-color: #27351C;
 }
 
 li {
@@ -56,10 +56,82 @@ li a:hover {
 }
 
 #inicioLink img{
-  width:40px;
-  height:40px;
+  width:30px;
+  height:30px;
 }
 
 #inicioLink img:hover{
-  transform: scale(1.7);
+  transform: scale(1.5);
+}
+
+.piePagina{
+  
+    box-sizing: border-box;
+    height: 50%;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px;
+    background-color: #C6EAAE;
+    opacity:0.5;
+    margin:3px;
+    justify-content:center;
+    align-items: center;
+  
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    ". a a ."
+    ". a a .";
+}
+
+.tcontacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 150px;
+  grid-template-areas:
+    ". b b ."
+    ". b b .";
+}
+.imagenContacto{
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+
+.pContacto{
+  grid-area: b;
+  align-self: center;
+  justify-self: center;
+}
+
+#imgContacto{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  transition: width 2s, height 2s
+}
+
+#imgContacto:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: 2s ease-in-out;
+}
+
+.imgredes a img{
+  width: 30px;
+  margin: 10px;
+  padding: 0px;
+}
+
+.imgredes{
+  display:flex;
+  float:none;
+  justify-content: center;
 }

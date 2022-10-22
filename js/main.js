@@ -14,6 +14,7 @@ imgContacto.onclick= function(){
     this.style.height = '200px';
 }; 
 
+
 //carga de sucursales en base a la clase sucursal
 
 

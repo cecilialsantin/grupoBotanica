@@ -1,4 +1,7 @@
-*{
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -65,18 +68,14 @@ li a:hover {
 }
 
 .piePagina{
-  
-    box-sizing: border-box;
-    height: 50%;
-    overflow: hidden;
     font-size: 12px;
     text-align: center;
-    padding: 2px;
-    background-color: #C6EAAE;
-    opacity:0.5;
-    margin:3px;
+    background-color: rgb(198, 234, 174, 0.4);
+    margin-top:3px;
     justify-content:center;
     align-items: center;
+    padding-top:2px;
+    opacity: 0.4;
   
 }
 

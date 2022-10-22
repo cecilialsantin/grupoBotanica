@@ -3,8 +3,8 @@
 let piepags = document.getElementById('piePagina');
 
 piepags.innerHTML = `
-    <p>Copyright - Grupo Botanica -  </p>
-    <p>Curso Full Stack Python Codo a Codo - Comisión 22519</p>
+    <p>Copyright - Grupo Botanica - <span>Curso Full Stack Python Codo a Codo - Comisión 22519</span>
+    <span><img src="/src/logocodoacodo.png" width="20px" alt="logocodoacodo"></span></p>
 `
 
 //animación imagen Contacto

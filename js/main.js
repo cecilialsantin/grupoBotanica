@@ -1,25 +1,3 @@
-//validacion de formulario login
-
-const nombre = document.getElementById("name");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const form = document.getElementById("formlogin");
-const parrafo = document.getElementById("warnings");
-
-form.addEventListener("submit", e=>{
-    e.preventDefault()
-    if(password.value.lenght<8){
-        alert("La contraseña no es válida, requiere menos 8 caracteres")
-    }
-    if(nombre.value.length <6){
-       alert("El nombre no es válido, por favor completá el nombre")
-    }
-   
-})
-
-
-
-
 
 //Agregado pie de pagina
 
@@ -72,3 +50,21 @@ myModal.addEventListener('shown.bs.modal', () => {
 })
 
 
+//validacion de formulario login
+
+const nombre = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const form = document.getElementById("formlogin");
+const parrafo = document.getElementById("warnings");
+
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    if(password.value.lenght<8){
+        alert("La contraseña no es válida, requiere menos 8 caracteres")
+    }
+    if(nombre.value.length <6){
+       alert("El nombre no es válido, por favor completá el nombre")
+    }
+   
+})

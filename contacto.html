@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
+<<<<<<< HEAD
+=======
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;700&family=Poppins:ital,wght@0,100;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+>>>>>>> desarrollo
     <link rel="icon" type="image/jpg" href="/src/favicon.png" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link
@@ -14,11 +23,19 @@
       crossorigin="anonymous"
     />
   </head>
+<<<<<<< HEAD
   <body>
     <header>
       <div class="navBarra">
         <nav>
           <ul>
+=======
+  <body onload="mostrarSucursales()">
+    <header>
+      <div class="navBarra">
+        <nav>
+          <ul class="listaNav">
+>>>>>>> desarrollo
             <li><a href="/contacto.html">Contacto</a></li>
             <li><a href="/ecosistema.html">Ecosistema</a></li>
             <li><a href="/elClub.html">El Club</a></li>
@@ -31,6 +48,7 @@
         </nav>
       </div>
     </header>
+<<<<<<< HEAD
     <main></main>
     <footer>
         <div class="piePagina" id="piePagina">
@@ -38,6 +56,53 @@
         </div>
     </footer>
 
+=======
+    <main>
+      <div class="contacto">
+        <div class="imagenContacto">
+          <img id="imgContacto" src="./src/imagenContacto.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="tcontacto">
+        <div class="pContacto">
+          <p>Puede contactarse con nosotros a: contacto@mail.com</p>
+          <div class="imgredes">
+            <a href="#"><img src="./src/logoFacebook.png" alt="logoFacebook" width="20px"></a>
+            <a href="#"><img src="./src/logoInstagram.png" alt="logoInstagram" width=20px"></a>
+            <a href="#"><img src="./src/locoWhats.png" alt="logowhatsapp"width="20px"></a></div>
+            <h5 class="tsucursales">Sucursales</h5>
+        </div>
+
+      
+      </div>
+      <div class="tcontacto">
+        <div class="pContacto">
+         
+          <table class="table text-center colorf" >
+          <thead class="text-center">
+            <th>Sucursal</th>
+            <th>Localidad</th>
+            <th>Mail</th>
+            <th></th>
+            <th>Dónde estamos</th>
+          </thead>
+          <tbody id="sucursales" class="text-center">
+            
+          </tbody>
+        </table>
+      </div>
+       
+        
+      
+      </div>
+    </main>
+    <footer>
+      <div class="piePagina" id="piePagina"></div>
+    </footer>
+
+    
+    <script src="./js/sucursal.js"></script>
+>>>>>>> desarrollo
     <script src="./js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

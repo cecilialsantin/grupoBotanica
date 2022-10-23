@@ -1,5 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 body{
-    margin: 10px;
+  margin: 10px;  
 }
 
 .piePagina li{
@@ -16,55 +23,213 @@ body{
     
 }
 nav{
-    justify-content: left;
+  justify-content: left;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
-    background-color: #31525B;
+.listaNav {
+  box-sizing: border-box;
+  height: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #27351C;
+}
 
-  }
-  
-  li {
-    float: right;
-    align-items: center;
-    justify-content: center;
-  }
+li {
+  float: right;
+  align-items: center;
+  justify-content: center;
+}
 
+li a {
+  display: block;
+  color: #FAE6B1;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
 
-  
-  li a {
-    display: block;
-    color: #FAE6B1;
+}
+
+li a:hover {
+  color: #B3DEE5;
+  box-shadow: #e2d2b5;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 30px;
+}
+
+#inicioLink{
+  float: left;
+  box-shadow: #FAE6B1;
+  background-color: #e2d2b5;
+}
+
+#inicioLink img{
+  width:30px;
+  height:30px;
+}
+
+#inicioLink img:hover{
+  transform: scale(1.5);
+}
+
+.piePagina{
+    font-size: 12px;
     text-align: center;
-    padding: 20px 30px;
-    text-decoration: none;
-
-  }
+    background-color: rgb(198, 234, 174, 0.4);
+    margin-top:3px;
+    justify-content:center;
+    align-items: center;
+    padding-top:2px;
+    opacity: 0.4;
   
-  li a:hover {
-    color:#B3DEE5;
-    box-shadow: #e2d2b5;
-    font-size: larger;
-    text-decoration: none;
-    text-transform:capitalize;
-    border-radius: 30px;
-  }
+}
 
-  #inicioLink{
-    float:left;
-    box-shadow: #FAE6B1;
-    background-color: #e2d2b5;
-  }
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    ". a a ."
+    ". a a .";
+}
 
-  #inicioLink img{
-    width:30px;
-    height:30px;
-  }
+.tcontacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 150px;
+  grid-template-areas:
+    ". b b ."
+    ". b b .";
+}
+.imagenContacto{
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
 
-  #inicioLink img:hover{
-    transform: scale(2);
-  }
+.pContacto{
+  grid-area: b;
+  align-self: center;
+  justify-self: center;
+}
+
+#imgContacto{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  transition: width 2s, height 2s
+}
+
+#imgContacto:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: 2s ease-in-out;
+}
+
+.imgredes a img{
+  width: 30px;
+  margin: 10px;
+  padding: 0px;
+}
+
+.imgredes{
+  display:flex;
+  float:none;
+  justify-content: center;
+}
+
+#sucursales img{
+  width: 100px;
+  height: 100px;
+}
+
+#sucursales iframe{
+  width: 100px;
+  height: 100px;
+}
+
+.tsucursales{
+  display:flex;
+  float:none;
+  justify-content: center;
+  padding:10px;
+  margin-top: 50px;
+}
+
+.colorf{
+  background-color: rgb(198, 234, 174, 0.5);
+}
+
+.indexgrid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.indexgrid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#fraseindex {
+  text-align: right;
+}
+#indexfondo{
+  background-image: url('/src/espinilloFondo.png');
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#linksdescripcion{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor:pointer;
+  margin:3px;
+}
+
+#linksdescripcion:hover{
+opacity: 0.4;
+}
+.cabeceroclub{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20%, 80%;
+  gap: 5px;
+  padding: 10px;
+}
+
+.contenidoclub{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20%, 80%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.cabeceroclub > div {
+  text-align: center;
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.contenidoclub > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.divformlogin{
+  border:#B3DEE5, solid, 4px;
+}
+

@@ -1,41 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GrupoBotanica - El Espinillo</title>
-    <link rel="icon" type="image/jpg" href="/src/favicon.png"/>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
-    crossorigin="anonymous">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;700&family=Poppins:ital,wght@0,100;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpg" href="./src/favicon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <div class="navBarra">
+      <div class="navBarra">
         <nav>
-               <ul>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                    <li><a href="/ecosistema.html">Ecosistema</a></li>
-                    <li><a href="/elClub.html">El Club</a></li>
-                    <li><a href="/index.html"><img src="./src/iconoInicio.png" alt="" width=25px height="25px">Inicio</a></li>
-                </ul>  
+          <ul class="listaNav">
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./ecosistema.html">Ecosistema</a></li>
+            <li><a href="./elClub.html">El Club</a></li>
+            <li>
+              <a href="./index.html"
+                ><img
+                  src="./src/iconoInicio.png"
+                  alt=""
+                  width="25px"
+                  height="25px"
+                />Inicio</a
+              >
+            </li>
+            <!-- <li id="inicioLink"><a href="./index.html"><img src="./src/iconoInicio.png" alt=""></a></li>-->
+          </ul>
         </nav>
-    </div>
+      </div>
     </header>
-    <div>
-        <h1>login</h1>
-        <p>El login lo podemos hacer con un formulario de bootstrap y 
-            usar Firestore para la autenticacion</p>
-    </div>
     <main>
-    
-        <h1>Hola Grupo Botanica</h1>
-        <p>Aritulo con la foto del espinillo y su descripcion</p>
-        <p>Articulo con una historia sobre el espinillo y su importancia como especie nativa</p>
-        <p>La animación que piden la podemos incluir en el boton de inicio, ej una mariposa o pajarito</p>
+        <div id="indexfondo">
+      <article class="indexgrid-container">
+        <div class="indexgrid-item">
+          <div class="indexgrid-item">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                <img src="/src/imagenindex.png" class="img-fluid rounded-start" alt="FotoEspinillo">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title p-1">Conozcamos al Espinillo</h5>
+                  <p class="card-text p-2">
+                    Aromo, aromito, espinillo negro, churqui, churco, espino, espinillo de bañado, kafén (Mapuche), huaranga, huatango, pashaco(quechua).
+                    Su nombre proviene de Akakia, del griego akantha: espina y caven del mapuche cahuen.</p>
+                    <h5 class="card-title p-1">Sus Características</h5>
+                  <p class="card-text p-2">
+                    Árbol o arbusto típico de Argentina, distribuido de manera pareja en varias provincias como: Córdoba, Jujuy, Salta, Tucumán, La Rioja, Catamarca, San Luis, San Juan, Santiago del Estero, Chaco, Formosa, Corrientes y Entre Ríos. 
+                
+                    En la provincia de Buenos Aires se puede ver en el delta y zonas que han estado anegadas. También presente en Bolivia, sur de Brasil, Chile, Uruguay y Paraguay.
+                    
+                    Puede llegar a los 6 metros de alto, de porte robusto, ramas tortuosas y flores pequeñitas con un perfume exótico y exquisito, de color amarillo.
+                    
+                    Abundante en las llanuras pampeanas y zonas de monte formando parte de zonas boscosas. 
+                    
+                    En zonas serranas se ve acompañado de Palo amarillo (Aloysia gratíssima), moradillo (Schinus fasciculatus) y otras especies espinosas.
+                    </p>
+                    <h5 class="card-title p-1">Sus Gustos</h5>
+                    <p class="card-text p-2"> Gusta del sol, siendo una especie muy resistente a la sequía. Se erige en solitario o también formando espinales, matorrales en los que se mezclan con otras acacias.
+                      </p>
+                      <h5 class="card-title p-1">Para saber más sobre él</h5>
+                    <p class="card-text p-2">
+                        <a href="http://cge.entrerios.gov.ar/2020/11/el-espinillo-es-el-arbol-entrerriano/#:~:text=Espinoso%2C%20con%20abundantes%20ramas%20sinuosas,profundas%20alteraciones%20ambientales%20(sobrepastoreo%20y"><img id="linksdescripcion" class="linksdescripcion" src="/src/IMG_0580.png" alt=""></a>
+                        <a href="/src/1-ATLAS_arboles_de_Argentina.pdf"><img id="linksdescripcion" class="linksdescripcion" src="/src/floresEspinillo.png" alt=""></a>
+                        <a href="https://www.avesargentinas.org.ar/ficha-planta/espinillo"><img id="linksdescripcion" class="linksdescripcion" src="/src/imagenlink3index.jpeg" alt=""></a>
+                      </p>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+          <div id="fraseindex" class="indexgrid-item"><h5>"Los árboles que crecen lento producen los mejores frutos".<span style="font-style:italic">Molière</span>
+          </h5>
+          </div>
+        </div>
+      </article>
+
+      <div class="indexgrid-item">
+        <p class="indexgrid-item h4">
+            ¿Por qué amamos a los árboles?...miremos algunas respuestas
+          </p>
+        <iframe
+          width="300"
+          height="200"
+          src="https://www.youtube.com/embed/9hhh6Y7g5CY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="300"
+          height="200"
+          src="https://www.youtube.com/embed/U0syR_-oMqQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
     </main>
     <footer>
+<<<<<<< HEAD
         <div class="piePagina" id="piePagina">
             
         </div>
@@ -46,3 +128,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
+=======
+      <div class="piePagina" id="piePagina"></div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+>>>>>>> desarrollo

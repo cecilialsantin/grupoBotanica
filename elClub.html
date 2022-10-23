@@ -121,82 +121,108 @@
       <div class="row justify-content-md-center">
         <div class="col col-sm-9">
           <p class="h3">El club</p>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item acordionclub">
+          <div class="accordion bg-success" id="accordionExample">
+            <div class="accordion-item text-secondary">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                ¿Qué hacemos en el club virtual árbol espinillo?
+                <button class="accordion-button collapsed bg-success text-dark fw-bold" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  ¿Qué hacemos en el club virtual árbol espinillo?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>El club virtual reúne, promueve y da a conocer las inquietudes de los socios en los temas referidos a la flora nativa y sus interacciones en los ecosistemas, con particular énfasis en el árbol espinillo, un emblema de nuestros árboles nativos</p>
+                  <p>El club virtual reúne, promueve y da a conocer las inquietudes de los socios en los temas referidos
+                    a la flora nativa y sus interacciones en los ecosistemas, con particular énfasis en el árbol
+                    espinillo, un emblema de nuestros árboles nativos</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed bg-success text-dark fw-bold" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
                   Nuestro objetivo...
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>El objetivo del club es el de promover el conocimiento sobre la naturaleza, para lograr que sea más y mejor valorada</p>
+                  <p>El objetivo del club es el de promover el conocimiento sobre la naturaleza, para lograr que sea más
+                    y mejor valorada</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ¿Querés ser Socio? 
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <h6 class="container">Envianos tus datos y te registramos</h6>
-              <form class="formulariologin" id="formlogin">
-              <label class="form-label visually-hidden" for="nombre">Nombre</label>
-              <input class="form-control" type="nombre" name="nombre" id="nombre" placeholder="Nombre">
-              <label class="form-label visually-hidden" for="apellido">apellido</label>
-              <input class="form-control" type="apellido" name="apellido" id="apellido" placeholder="Apellido">
-              <label class="form-label visually-hidden" for="email">Email</label>
-              <input class="form-control" type="email" name="email" id="email" placeholder="Email">
-              <label class="form-label visually-hidden" for="password">Contraseña</label>
-              <input class="form-control" type="password" name="password" id="password" placeholder="Contraseña">
-              <button type="submit" class="btn btn-success m-3 p-2">Enviar</button>
-            </form>
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed bg-success text-dark fw-bold" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  ¿Querés ser Socio?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <h6 class="container">Envianos tus datos y te registramos</h6>
+                  <form class="formulariologin" id="formreg">
+                    <label class="form-label visually-hidden" for="nombre">Nombre</label>
+                    <input class="form-control" type="nombre" name="nombre" id="nombrereg" placeholder="Nombre">
+                    <label class="form-label visually-hidden" for="apellido">apellido</label>
+                    <input class="form-control" type="apellido" name="apellido" id="apellidoreg" placeholder="Apellido">
+                    <label class="form-label visually-hidden" for="email">Email</label>
+                    <input class="form-control" type="email" name="email" id="emailreg" placeholder="Email">
+                    <label class="form-label visually-hidden" for="password">Contraseña</label>
+                    <input class="form-control" type="password" name="password" id="passwordreg"
+                      placeholder="Contraseña">
+                    <button type="submit" class="btn btn-success m-3 p-2">Enviar</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenidoclub">
+      <div class="row justify-content-md-center">
+        <div class="col col-sm-5">
+          <div class="container">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Listado de Socios</h5>
+               <table>Tabla socios</table>
+              </div>
+            </div>
           </div>
-        </div> 
-        <div class="col col-sm-3">
-          <h4>Login</h4>
-          <form class="border border-success m-3 p-3" id="formlogin">
-            <label class="form-label visually-hidden" for="nombre">Nombre</label>
-            <input class="form-control" type="nombre" name="nombre" id="nombre" placeholder="Nombre">
-            <label class="form-label visually-hidden" for="apellido">apellido</label>
-            <input class="form-control" type="apellido" name="apellido" id="apellido" placeholder="Apellido">
-            <label class="form-label visually-hidden" for="email">Email</label>
-            <input class="form-control" type="email" name="email" id="email" placeholder="Email">
-            <label class="form-label visually-hidden" for="password">Contraseña</label>
-            <input class="form-control" type="password" name="password" id="password" placeholder="Contraseña">
-            <button type="submit" class="btn btn-success m-3 p-2">Enviar</button>
-          </form>
         </div>
-        
-        
-       
+        <div class="col col-sm-5">
+          <div class="container">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Historias de Socios</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Este es un video enviado 
+                  por un socio, encontró este hermoso espinillo en un camino rural</h6>
+                <p class="card-text"><iframe src="https://youtube.com/embed/5o4SK0ken5E?feature=share" width="250" height="500">Carlos
+                  Keen</iframe></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="contenidoclub">
-        <div class="container">Listado de socios</div>
-        <div class="container">Actividades</div>
-        <div class="container">Historias de Socios
-          <iframe src="https://youtube.com/embed/5o4SK0ken5E?feature=share" width="250" height="500">Carlos Keen</iframe>
+        <div class="col col-sm-2">
+          <div class="container">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h5 class="card-title">Actividades</h5>
+               <table><h6>Proximamente Cartelera de actividades...</h6></table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
   </main>
 
   <footer>

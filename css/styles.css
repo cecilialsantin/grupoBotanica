@@ -191,3 +191,37 @@ li a:hover {
 #linksdescripcion:hover{
 opacity: 0.4;
 }
+.cabeceroclub{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20%, 80%;
+  gap: 5px;
+  padding: 10px;
+}
+
+.contenidoclub{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20%, 80%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.cabeceroclub > div {
+  text-align: center;
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.contenidoclub > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.divformlogin{
+  border:#B3DEE5, solid, 4px;
+}
+

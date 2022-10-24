@@ -22,16 +22,52 @@
     <div class="navBarra">
       <nav>
         <ul class="listaNav">
-          <li><a href="/contacto.html">Contacto</a></li>
-          <li><a href="/ecosistema.html">Ecosistema</a></li>
-          <li><a href="/elClub.html">El Club</a></li>
-          <li id="inicioLink">
-            <a href="/index.html"><img src="./src/iconoInicio.png" alt="" /></a>
-          </li>
+          <li><button type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./ecosistema.html">Ecosistema</a></li>
+          <li><a href="./elClub.html">El Club</a></li>
+          <li id="inicioLink"><a href="./index.html"><img src="./src/iconoInicio.png" alt=""></a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+    <!--modal login--->
+    <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog text-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="fw-bold">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="formulariomodal">
+            <form action="" method="GET" id="formlogin">
+              <div id="containerLogin" class="container">
+                <div class="grupo">
+                  <label for="nombre"></label>
+                  <input type="text" name="nombre" id="name" placeholder="Nombre"> 
+                </div>
+                <div class="grupo">
+                  <label for="email"></label>
+                  <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="grupo">
+                  <label for="password"></label>
+                  <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div class="grupo">
+                <input type="submit" value="Enviar">
+              </div>
+                <p class="warnings" id="warnings"></p>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <main>
     <div class="cabeceroclub">
       <div class="row justify-content-md-center">

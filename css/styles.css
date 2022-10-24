@@ -1,21 +1,53 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-body{
-  margin: 10px;  
+main, footer, div, body, header {
+  margin: 0;
+  padding: 0;
 }
 
-.navBarra{
-    width:auto;
-    margin:5px;
-    
+.navBarra {
+  width: auto;
 }
-nav{
-  justify-content: left;
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  background: #333;
+  font-size: 0;
+}
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: 20%;
+  line-height: 35px;
+  font-size: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: .3s
+}
+
+nav a:hover {
+  background: #235817;
 }
 
 .listaNav {
@@ -25,7 +57,7 @@ nav{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #27351C;
+  background-color: #306e21;
 }
 
 li {
@@ -54,15 +86,15 @@ li button{
 }
 
 li a:hover {
-  color: #B3DEE5;
+  color: #c6eaae;
   box-shadow: #e2d2b5;
   font-size: 20px;
   text-decoration: none;
   text-transform: capitalize;
-  border-radius: 30px;
 }
 
-#inicioLink{
+#inicioLink {
+  width: 10%;
   float: left;
   box-shadow: #FAE6B1;
   background-color: #e2d2b5;
@@ -73,30 +105,36 @@ li a:hover {
   height:30px;
 }
 
-#inicioLink img:hover{
-  transform: scale(1.5);
+.piePagina {
+  font-size: 12px;
+  text-align: center;
+  background-color: #27351c;
+  color: #e2d2b5;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
 }
 
-.piePagina{
-    font-size: 12px;
-    text-align: center;
-    background-color: rgb(198, 234, 174, 0.4);
-    margin-top:3px;
-    justify-content:center;
-    align-items: center;
-    padding-top:2px;
-    opacity: 0.4;
-  
+li button{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  background-color:#27351C;
+  color:#e2d2b5;
+  float: right;
+ 
 }
 
-.contacto {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  .contacto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
   grid-auto-rows: 100px;
   grid-template-areas:
-    ". a a ."
-    ". a a .";
+  ". a a ."
+  ". a a .";
 }
 
 .tcontacto {
@@ -105,12 +143,12 @@ li a:hover {
   grid-gap: 10px;
   grid-auto-rows: 150px;
   grid-template-areas:
-    ". b b ."
-    ". b b .";
+  ". b b ."
+  ". b b .";
 }
 .imagenContacto{
   grid-area: a;
-  align-self: center;
+  align-self: flex-end;
   justify-self: center;
 }
 
@@ -124,13 +162,11 @@ li a:hover {
   border-radius: 50%;
   width:100px;
   height:100px;
-  transition: width 2s, height 2s
+  transition: 2s ease-in-out;
 }
 
-#imgContacto:hover{
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  transition: 2s ease-in-out;
+#imgContacto:hover {
+  transform: rotate(1800deg);
 }
 
 .imgredes a img{
@@ -184,7 +220,7 @@ li a:hover {
   text-align: right;
 }
 #indexfondo{
-  background-image: url('/src/espinilloFondo.png');
+  background-image: url('./src/espinilloFondo.png');
   background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;

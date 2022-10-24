@@ -1,4 +1,6 @@
 
+
+
 //Agregado pie de pagina
 
 let piepags = document.getElementById('piePagina');
@@ -42,7 +44,6 @@ function mostrarSucursales(){
 
 }
 
-
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
@@ -68,4 +69,5 @@ form.addEventListener("submit", e=>{
        alert("El nombre no es válido, por favor completá el nombre")
     }
    
-})
+});
+

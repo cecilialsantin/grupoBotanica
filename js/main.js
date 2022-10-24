@@ -1,4 +1,5 @@
 
+
 //Agregado pie de pagina
 
 let piepags = document.getElementById('piePagina');
@@ -67,4 +68,5 @@ form.addEventListener("submit", e=>{
        alert("El nombre no es válido, por favor completá el nombre")
     }
    
-})
+});
+

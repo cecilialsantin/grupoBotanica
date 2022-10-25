@@ -46,13 +46,13 @@ nav a {
   transition: .3s
 }
 
-nav a:hover {
+/*nav a:hover {
   background: #235817;
-}
+}*/
 
 .listaNav {
   box-sizing: border-box;
-  height: 50%;
+  /*height: 50%*/;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -62,40 +62,41 @@ nav a:hover {
 
 li {
   float:left;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+}
+
+#linkindex{
+  float:right;
+  align-items: right;
+  justify-content: right;
+  margin-right:6px;
 }
 
 li a {
   display: block;
   color: #FAE6B1;
   text-align: center;
-  padding: 20px 30px;
+  padding: 5px 10px;
   text-decoration: none;
-}
-
-li button{
-  display: block;
-  text-align: center;
-  justify-content: center;
-  margin-left:3px;
-  text-decoration: none;
-  color:#e2d2b5;
- 
+  margin:3px;
+  font-size: 15px;
 }
 
 li button:hover {
   color:#27351c;
   box-shadow: #e2d2b5;
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform:capitalize;
+  background-color: #c2216c;
+
 }
 
 li a:hover {
   color:#a5ce86;
   box-shadow: #e2d2b5;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -119,16 +120,15 @@ li button{
   display: block;
   text-align: center;
   justify-content: center;
-  padding: 5px 15px;
+  align-items: center;
   text-decoration: none;
   color:rgb(122, 26, 42);
+  width: 50px;
+  height: 40px;
+  margin-top: 3px;
   background-color:#c6eaae;
   float: right;
-  border-radius: 15%;
-  font-size: 15px;
-  margin-top: 10px;
-  font-weight: 600;
- 
+  border-radius: 10%;
 }
 
   .contacto {

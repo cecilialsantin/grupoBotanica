@@ -100,21 +100,21 @@ window.onload = function () {
        for(let florayfauna of fyfs){
             textofyf += `<tr>
                 <td>${florayfauna.nombre}</td>
-                <td><img src=${florayfauna.foto}></td>
+                <td><img width="80px" heigth="80px" src=${florayfauna.foto}></td>
                 <tr>`
         }
     
         for(let polinizador of polinizadores){
             textopoli += `<tr>
                 <td>${polinizador.nombre}</td>
-                <td><img src=${polinizador.foto}></td>
+                <td><img width="80px" heigth="80px" src=${polinizador.foto}></td>
                 <tr>`
         }
     
         for(let dispersor of dispersores){
             textodisp +=`<tr>
             <td>${dispersor.nombre}</td>
-            <td><img src=${dispersor.foto}></td>
+            <td><img width="80px" heigth="80px" src=${dispersor.foto}></td>
             <tr>`
         }
     

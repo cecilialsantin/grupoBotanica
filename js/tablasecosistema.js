@@ -87,7 +87,7 @@ window.onload = function () {
     
     const dispersores=[
         new Dispersor('Pájaros', './src/chiviro.jpeg'),
-        new Dispersor('Pequeñps Roedores','./src/cuiz.jpeg'),
+        new Dispersor('Pequeños Roedores','./src/cuiz.jpeg'),
         new Dispersor('Viento', './src/viento.jpeg')
     ]
     

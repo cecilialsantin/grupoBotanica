@@ -275,10 +275,6 @@ opacity: 0.4;
   margin:10px;
 }
 
-.divformlogin{
-  border:#B3DEE5, solid, 4px;
-}
-
 .warnings{
   width: 200px;
   text-align: center;
@@ -288,14 +284,15 @@ opacity: 0.4;
 }
 
 .formulariomodal{
-  background-color:#FAE6B1;
+  background-color:rgb(194, 33, 108, 0.4);
   align-content: center;
+  margin:20px;
 }
 
 .grupo{
-  padding:10px;
-  margin:5px;
-  border-radius: 20%;
+  padding:5px;
+  margin:2px;
+  border-radius: 30%;
   align-items: center;
   justify-content: center;
   display:flex;
@@ -311,15 +308,21 @@ opacity: 0.4;
 
 .grupo input[type="submit"]{
   background-color:#27351C;
-  color:#e2d2b5;
+  color:rgb(194, 33, 108);;
   border:none;
   letter-spacing: 5px;
   text-transform: uppercase;
   cursor: pointer;
   padding: 15px;
-  margin-top: 30px
+  margin-top: 30px;
+  border-radius:10%;
 }
 
+.grupo input[type="submit"]:hover{
+  background-color:#c0e6a2;
+  text-transform: capitalize;
+
+}
 .actividades h3{
   font-size: 15px;
   text-decoration: none;
@@ -337,6 +340,5 @@ opacity: 0.4;
   height: 500px;
 background-size: cover;
 background-position: center;
-
-
 }
+

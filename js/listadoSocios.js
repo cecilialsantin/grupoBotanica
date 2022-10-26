@@ -6,9 +6,9 @@ function listarSocios() {
         socios.push(doc.data());
     });
     agregarTodosLosSocios(socios)
+    document.getElementById("totalSocios").innerHTML = `Total Socios: ${socios.length}`
 
 });
-
 }
 
 function listarSociosRealTime() {
@@ -31,17 +31,14 @@ function listarSociosRealTime() {
     let td1 = document.createElement('td');
     let td2 = document.createElement('td');
     let td3 = document.createElement('td');
-    let td4 = document.createElement('td');
 
-    td1.innerHTML = ++socioNro;
-    td2.innerHTML = nombre;
-    td3.innerHTML = apellido;
-    td4.innerHTML = email;
+    td1.innerHTML = nombre;
+    td2.innerHTML = apellido;
+    td3.innerHTML = email;
 
     trow.appendChild(td1);
     trow.appendChild(td2);
     trow.appendChild(td3);
-    trow.appendChild(td4);
 
     tbody.appendChild(trow);
 
@@ -56,6 +53,7 @@ function listarSociosRealTime() {
 
  }
 
+ 
  window.onload = listarSocios;
  
 
